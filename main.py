@@ -327,6 +327,7 @@ async def main():
     
     with open("keys.txt", "r") as f:
         keys = f.read().split("\n")
+    random.shuffle(keys)
     accounts = []
     for key in keys:
         stark_native_account, call_data, salt, class_hash = import_stark_account(int(key, 16))
