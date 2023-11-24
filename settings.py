@@ -1,6 +1,5 @@
 RPC = "https://starknet-mainnet.public.blastapi.io" # Нодя, которую будет юзать софт
 Provider = "Argent" # Какой провайдер использовать Argent/argent_newest/braavos
-cairo_version = 1 # Версия каиро кошельков (См. на главной странице кошелька в сканере)
 
 mint_amount = [4, 6] # Кол-во минтов ОТ и ДО
 
