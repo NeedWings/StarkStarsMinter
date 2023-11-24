@@ -242,7 +242,7 @@ class StarkAccount(BaseStarkAccount):
 
     async def get_invocation(self, calls):
         try:
-            invocation = await self.stark_native_account.execute(calls=calls, auto_estimate=True, cairo_version=cairo_version)
+            invocation = await self.stark_native_account.execute(calls=calls, auto_estimate=True)
             return invocation
         except Exception as e:
             logger.error(f"[{self.formatted_hex_address}] can't create transaction. Error:{e}")
